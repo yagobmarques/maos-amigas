@@ -1,0 +1,407 @@
+/* Custom Styles for Mãos Amigas */
+
+/* ========================================
+   PERSONALIZAÇÃO DE CORES
+   Altere as cores abaixo para personalizar o site
+   ======================================== */
+:root {
+    /* Cores Principais */
+    --primary-color: #0d6efd;      /* Azul principal - navbar, botões */
+    --primary-dark: #0056b3;       /* Azul escuro - gradientes */
+    --secondary-color: #6c757d;    /* Cinza secundário */
+    --accent-color: #ffc107;       /* Amarelo destaque - botões CTA */
+    
+    /* Cores de Status */
+    --success-color: #198754;      /* Verde - WhatsApp, sucesso */
+    --warning-color: #ffc107;      /* Amarelo - avisos */
+    --danger-color: #dc3545;       /* Vermelho - alertas */
+    --info-color: #0dcaf0;         /* Azul claro - informações */
+    
+    /* Cores Neutras */
+    --light-color: #f8f9fa;        /* Fundo claro */
+    --dark-color: #212529;         /* Texto escuro */
+    --white: #ffffff;              /* Branco puro */
+    --gray-100: #f8f9fa;
+    --gray-200: #e9ecef;
+    --gray-300: #dee2e6;
+    
+    /* Gradientes Personalizáveis */
+    --hero-gradient: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    --card-gradient: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+    --footer-gradient: linear-gradient(135deg, var(--dark-color) 0%, #000 100%);
+    
+    /* Sombras */
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 8px rgba(0,0,0,0.12);
+    --shadow-lg: 0 8px 16px rgba(0,0,0,0.15);
+    --shadow-xl: 0 12px 24px rgba(0,0,0,0.18);
+}
+
+/* Tema Alternativo - Descomente para usar */
+/*
+:root {
+    --primary-color: #28a745;      
+    --primary-dark: #1e7e34;      
+    --accent-color: #fd7e14;       
+    --hero-gradient: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+}
+*/
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding-top: 76px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: var(--hero-gradient);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    /* Imagem de fundo opcional - descomente e adicione sua imagem */
+    background-image: url('../images/hero-bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(13, 110, 253, 0.95) !important;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: var(--primary-color) !important;
+    box-shadow: var(--shadow-lg);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+.btn {
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Section spacing */
+section {
+    padding: 80px 0;
+}
+
+/* Icons */
+.fas, .fab {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .fas,
+.card:hover .fab {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, var(--dark-color) 0%, #000 100%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+        padding: 40px 0;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .display-5 {
+        font-size: 2rem;
+    }
+    
+    section {
+        padding: 60px 0;
+    }
+}
+
+/* Animation classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Custom utilities */
+.text-gradient {
+    background: linear-gradient(45deg, var(--primary-color), var(--warning-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.shadow-custom {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================================
+   PLACEHOLDERS DE IMAGENS
+   ======================================== */
+.card-img-placeholder {
+    background: linear-gradient(45deg, var(--gray-200), var(--gray-300));
+    border-radius: 15px 15px 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img-placeholder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+/* Estilos para imagens reais */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* Logo personalizável */
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/* ========================================
+   NÚMEROS DA RIFA
+   ======================================== */
+.numeros-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    gap: 8px;
+    max-height: 600px;
+    overflow-y: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: var(--shadow-md);
+}
+
+.numero-item {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+    user-select: none;
+}
+
+.numero-item.disponivel {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white;
+    box-shadow: 0 2px 4px rgba(40, 167, 69, 0.3);
+}
+
+.numero-item.vendido {
+    background: #6c757d;
+    color: white;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.numero-item.selecionado {
+    background: linear-gradient(135deg, #ffc107, #fd7e14);
+    color: #000;
+    border-color: #fd7e14;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(255, 193, 7, 0.4);
+}
+
+.numero-item.disponivel:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.4);
+}
+
+.numero-item.hidden {
+    display: none;
+}
+
+.numero-exemplo {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.numero-exemplo.disponivel {
+    background: linear-gradient(135deg, #28a745, #20c997);
+}
+
+.numero-exemplo.vendido {
+    background: #6c757d;
+}
+
+.numero-exemplo.selecionado {
+    background: linear-gradient(135deg, #ffc107, #fd7e14);
+}
+
+.numeros-selecionados-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+.numero-selecionado-badge {
+    background: var(--accent-color);
+    color: #000;
+    padding: 4px 8px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .numeros-container {
+        grid-template-columns: repeat(auto-fill, minmax(45px, 1fr));
+        gap: 6px;
+        padding: 15px;
+    }
+    
+    .numero-item {
+        width: 45px;
+        height: 45px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 576px) {
+    .numeros-container {
+        grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+        gap: 4px;
+        padding: 10px;
+    }
+    
+    .numero-item {
+        width: 40px;
+        height: 40px;
+        font-size: 10px;
+    }
+}
+
+/* ========================================
+   COLABORADORES E PATROCINADORES
+   ======================================== */
+.colaborador-foto .foto-placeholder,
+.patrocinador-logo .logo-placeholder {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .colaborador-foto .foto-placeholder,
+.card:hover .patrocinador-logo .logo-placeholder {
+    transform: scale(1.1);
+}
+
+.social-links .btn,
+.contact-links .btn {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ========================================
+   GUIA DE PERSONALIZAÇÃO DE IMAGENS
+   
+   Para adicionar suas próprias imagens:
+   
+   1. LOGO: Adicione 'logo.png' na pasta images/
+   2. HERO: Adicione 'hero-bg.jpg' na pasta images/
+   3. GALERIA: Adicione fotos numeradas (foto1.jpg, foto2.jpg, etc.)
+   4. COLABORADORES: Adicione fotos na pasta images/colaboradores/
+   5. PATROCINADORES: Adicione logos na pasta images/patrocinadores/
+   
+   Tamanhos recomendados:
+   - Logo: 200x60px (PNG com fundo transparente)
+   - Hero: 1920x1080px (JPG, boa qualidade)
+   - Galeria: 800x600px (JPG, qualidade média)
+   - Colaboradores: 200x200px (JPG, formato quadrado)
+   - Patrocinadores: 300x200px (PNG com fundo transparente)
+   ======================================== */

@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "nome": "Supermercado Amigo",
+    "categoria": "Ouro",
+    "logo": "images/patrocinadores/supermercado-amigo.png",
+    "descricao": "Doação mensal de cestas básicas",
+    "website": "https://supermercadoamigo.com.br",
+    "contato": "contato@supermercadoamigo.com.br"
+  },
+  {
+    "id": 2,
+    "nome": "Farmácia Saúde",
+    "categoria": "Prata",
+    "logo": "images/patrocinadores/farmacia-saude.png",
+    "descricao": "Medicamentos e produtos de higiene",
+    "website": "https://farmaciasaude.com.br",
+    "contato": "parceria@farmaciasaude.com.br"
+  },
+  {
+    "id": 3,
+    "nome": "Padaria do Bairro",
+    "categoria": "Bronze",
+    "logo": "images/patrocinadores/padaria-bairro.png",
+    "descricao": "Pães e lanches para eventos",
+    "website": "",
+    "contato": "(11) 99999-8888"
+  }
+]
