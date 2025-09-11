@@ -37,20 +37,40 @@
     --shadow-xl: 0 12px 24px rgba(0,0,0,0.18);
 }
 
-/* Tema Alternativo - Descomente para usar */
-/*
+/* Tema Dia das Crianças - Cores de Conforto e Solidariedade */
 :root {
-    --primary-color: #28a745;      
-    --primary-dark: #1e7e34;      
-    --accent-color: #fd7e14;       
-    --hero-gradient: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+    /* Cores Principais - Inspiradas no Dia das Crianças */
+    --primary-color: #6366f1;      /* Roxo suave - criatividade e magia */
+    --primary-dark: #4338ca;       /* Roxo escuro */
+    --secondary-color: #64748b;    /* Cinza azulado */
+    --accent-color: #f59e0b;       /* Amarelo alegre - sol e felicidade */
+    
+    /* Cores de Apoio */
+    --success-color: #10b981;      /* Verde esperança */
+    --warning-color: #f59e0b;      /* Amarelo caloroso */
+    --danger-color: #ef4444;       /* Vermelho suave */
+    --info-color: #3b82f6;         /* Azul confiança */
+    
+    /* Cores Especiais */
+    --children-pink: #ec4899;      /* Rosa alegre */
+    --children-blue: #3b82f6;     /* Azul brincalhão */
+    --children-orange: #f97316;   /* Laranja energia */
+    
+    /* Gradientes Temáticos */
+    --hero-gradient: linear-gradient(135deg, var(--primary-color) 0%, var(--children-pink) 50%, var(--accent-color) 100%);
+    --card-gradient: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+    --footer-gradient: linear-gradient(135deg, var(--primary-dark) 0%, #1e293b 100%);
+    
+    /* Sombras Coloridas */
+    --shadow-sm: 0 2px 4px rgba(99, 102, 241, 0.1);
+    --shadow-md: 0 4px 8px rgba(99, 102, 241, 0.15);
+    --shadow-lg: 0 8px 16px rgba(99, 102, 241, 0.2);
+    --shadow-xl: 0 12px 24px rgba(99, 102, 241, 0.25);
 }
-*/
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    padding-top: 76px;
 }
 
 /* Hero Section */
@@ -92,13 +112,13 @@ html {
 /* Navbar */
 .navbar {
     backdrop-filter: blur(10px);
-    background-color: rgba(13, 110, 253, 0.95) !important;
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--children-pink) 100%) !important;
     box-shadow: var(--shadow-md);
     transition: all 0.3s ease;
 }
 
 .navbar.scrolled {
-    background-color: var(--primary-color) !important;
+    background: var(--primary-color) !important;
     box-shadow: var(--shadow-lg);
 }
 
@@ -110,11 +130,13 @@ html {
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 15px;
+    border: 1px solid rgba(99, 102, 241, 0.1);
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.2);
+    border-color: rgba(99, 102, 241, 0.3);
 }
 
 /* Buttons */
@@ -127,7 +149,23 @@ html {
 
 .btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.3);
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, var(--primary-color), var(--children-blue));
+    border: none;
+}
+
+.btn-warning {
+    background: linear-gradient(45deg, var(--accent-color), var(--children-orange));
+    border: none;
+    color: #fff;
+}
+
+.btn-success {
+    background: linear-gradient(45deg, var(--success-color), #059669);
+    border: none;
 }
 
 /* Section spacing */
@@ -147,7 +185,7 @@ section {
 
 /* Footer */
 footer {
-    background: linear-gradient(135deg, var(--dark-color) 0%, #000 100%);
+    background: var(--footer-gradient);
 }
 
 /* Responsive adjustments */
@@ -270,24 +308,24 @@ footer {
 }
 
 .numero-item.disponivel {
-    background: linear-gradient(135deg, #28a745, #20c997);
+    background: linear-gradient(135deg, var(--success-color), var(--children-blue));
     color: white;
-    box-shadow: 0 2px 4px rgba(40, 167, 69, 0.3);
+    box-shadow: 0 2px 4px rgba(16, 185, 129, 0.3);
 }
 
 .numero-item.vendido {
-    background: #6c757d;
+    background: linear-gradient(135deg, #64748b, #475569);
     color: white;
     cursor: not-allowed;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 .numero-item.selecionado {
-    background: linear-gradient(135deg, #ffc107, #fd7e14);
-    color: #000;
-    border-color: #fd7e14;
+    background: linear-gradient(135deg, var(--children-pink), var(--children-orange));
+    color: white;
+    border-color: var(--children-pink);
     transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(255, 193, 7, 0.4);
+    box-shadow: 0 4px 8px rgba(236, 72, 153, 0.4);
 }
 
 .numero-item.disponivel:hover {
@@ -307,15 +345,15 @@ footer {
 }
 
 .numero-exemplo.disponivel {
-    background: linear-gradient(135deg, #28a745, #20c997);
+    background: linear-gradient(135deg, var(--success-color), var(--children-blue));
 }
 
 .numero-exemplo.vendido {
-    background: #6c757d;
+    background: linear-gradient(135deg, #64748b, #475569);
 }
 
 .numero-exemplo.selecionado {
-    background: linear-gradient(135deg, #ffc107, #fd7e14);
+    background: linear-gradient(135deg, var(--children-pink), var(--children-orange));
 }
 
 .numeros-selecionados-list {
@@ -326,12 +364,13 @@ footer {
 }
 
 .numero-selecionado-badge {
-    background: var(--accent-color);
-    color: #000;
+    background: linear-gradient(45deg, var(--children-pink), var(--children-orange));
+    color: white;
     padding: 4px 8px;
     border-radius: 15px;
     font-size: 12px;
     font-weight: bold;
+    box-shadow: 0 2px 4px rgba(236, 72, 153, 0.3);
 }
 
 /* Responsivo */

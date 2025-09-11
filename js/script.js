@@ -124,9 +124,10 @@ $(document).ready(function() {
                         <div class="card h-100 text-center border-0 shadow-sm">
                             <div class="card-body p-4">
                                 <div class="colaborador-foto mb-3">
-                                    <div class="foto-placeholder bg-secondary d-flex align-items-center justify-content-center mx-auto" style="width: 100px; height: 100px; border-radius: 50%;">
-                                        <i class="fas fa-user fa-2x text-white"></i>
-                                    </div>
+                                    ${colaborador.foto ? 
+                                        `<img src="${colaborador.foto}" alt="${colaborador.nome}" class="rounded-circle mx-auto d-block" style="width: 100px; height: 100px; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">`  :
+                                        `<div class="foto-placeholder bg-secondary d-flex align-items-center justify-content-center mx-auto" style="width: 100px; height: 100px; border-radius: 50%;"><i class="fas fa-user fa-2x text-white"></i></div>`
+                                    }
                                 </div>
                                 <h5 class="card-title">${colaborador.nome}</h5>
                                 <p class="text-primary fw-bold">${colaborador.cargo}</p>
@@ -352,15 +353,6 @@ $(document).ready(function() {
     }
 
     carregarNumeros();
-
-    // Parallax effect for hero section
-    $(window).scroll(function() {
-        var scrolled = $(this).scrollTop();
-        var parallax = $('.hero-section');
-        var speed = scrolled * 0.5;
-        
-        parallax.css('transform', 'translateY(' + speed + 'px)');
-    });
 
     // Add loading states to buttons
     $('.btn').on('click', function() {
