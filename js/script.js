@@ -203,10 +203,10 @@ $(document).ready(function() {
             numerosData = [];
             
             for (let i = 1; i <= 500; i++) {
-                const numeroFormatado = i.toString().padStart(3, '0');
+                // const numeroFormatado = i.toString().padStart(3, '0');
+                const numeroFormatado = i
                 const linha = linhas.find(l => l.startsWith(numeroFormatado));
                 const status = linha ? linha.split(',')[1]?.trim() : 'disponivel';
-                
                 numerosData.push({
                     numero: numeroFormatado,
                     status: status === 'comprada' ? 'vendido' : 'disponivel'

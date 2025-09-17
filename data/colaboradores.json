@@ -2,29 +2,28 @@
   {
     "id": 1,
     "nome": "Victor Campos",
-    "cargo": "Fumador de Vape",
+    "cargo": "Colaborador",
     "foto": "images/colaboradores/victor-campos.jpg",
-    "descricao": "Cantor e compositor (qnd bebe). Cover do João Gomes",
-    "instagram": "@victorcamposvet",
-    "whatsapp": "5511999999999"
+    "descricao": "Arrecadação de doações e vendas de rifas",
+    "instagram": "@victorcamposvet"
   },
   {
     "id": 2,
-    "nome": "João Santos",
-    "cargo": "Tesoureiro",
-    "descricao": "Responsável pela gestão financeira e transparência",
-    "instagram": "@joao.santos",
-    "whatsapp": "5511888888888"
+    "nome": "Yago Marques",
+    "foto": "images/colaboradores/yago-marques.jpg",
+    "cargo": "Desenvolvedor",
+    "descricao": "Responsável pela construção do site e controle da venda das rifas",
+    "instagram": "@yago.mrqs"
   },
   {
     "id": 3,
-    "nome": "Ana Costa",
-    "cargo": "Coordenadora de Eventos",
-    "descricao": "Organiza e executa todos os eventos beneficentes",
-    "instagram": "@ana.costa",
-    "whatsapp": "5511777777777"
+    "nome": "Jaciana Costa",
+    "cargo": "Colaboradora",
+    "foto": "images/colaboradores/jaciana.jpg",
+    "descricao": "Arrecadação de doações e vendas de rifas",
+    "instagram": "@jacianacostaa"
   },
-   {
+  {
     "id": 4,
     "nome": "Ana Costa",
     "cargo": "Coordenadora de Eventos",
@@ -32,7 +31,7 @@
     "instagram": "@ana.costa",
     "whatsapp": "5511777777777"
   },
-   {
+  {
     "id": 5,
     "nome": "Ana Costa",
     "cargo": "Coordenadora de Eventos",

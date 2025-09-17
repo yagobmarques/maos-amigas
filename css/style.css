@@ -308,7 +308,8 @@ footer {
 }
 
 .numero-item.disponivel {
-    background: linear-gradient(135deg, var(--success-color), var(--children-blue));
+    /* background: linear-gradient(135deg, var(--success-color), var(--children-blue)); */
+    background: var(--success-color);
     color: white;
     box-shadow: 0 2px 4px rgba(16, 185, 129, 0.3);
 }
@@ -345,7 +346,8 @@ footer {
 }
 
 .numero-exemplo.disponivel {
-    background: linear-gradient(135deg, var(--success-color), var(--children-blue));
+    /* background: linear-gradient(135deg, var(--success-color), var(--children-blue)); */
+    background: var(--success-color);
 }
 
 .numero-exemplo.vendido {
