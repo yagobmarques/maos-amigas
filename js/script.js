@@ -206,7 +206,8 @@ $(document).ready(function() {
                 // const numeroFormatado = i.toString().padStart(3, '0');
                 const numeroFormatado = i
                 const linha = linhas.find(l => l.startsWith(numeroFormatado));
-                const status = linha ? linha.split(',')[1]?.trim() : 'disponivel';
+                console.log(linha)
+                const status = linha != undefined ? 'comprada' : 'disponivel';
                 numerosData.push({
                     numero: numeroFormatado,
                     status: status === 'comprada' ? 'vendido' : 'disponivel'
