@@ -1,103 +1,172 @@
-1, comprada
-2, comprada
-3, comprada
-4, comprada
-5, comprada
-6, comprada
-7, comprada
-8, comprada
-9, comprada
-10, comprada
-11, comprada
-12, comprada
-13, comprada
-14, comprada
-15, comprada
-16, comprada
-17, comprada
-18, comprada
-19, comprada
-20, comprada
-21, comprada
-22, comprada
-23, comprada
-25, comprada
-26, comprada
-27, comprada
-28, comprada
-29, comprada
-30, comprada
-31, comprada
-32, comprada
-33, comprada
-34, comprada
-35, comprada
-36, comprada
-37, comprada
-38, comprada
-39, comprada
-40, comprada
-41, comprada
-42, comprada
-44, comprada
-45, comprada
-46, comprada
-47, comprada
-48, comprada
-50, comprada
-51, comprada
-52, comprada
-53, comprada
-54, comprada
-55, comprada
-56, comprada
-57, comprada
-58, comprada
-60, comprada
-61, comprada
-62, comprada
-64, comprada
-65, comprada
-66, comprada
-67, comprada
-68, comprada
-69, comprada
-70, comprada
-72, comprada
-73, comprada
-74, comprada
-75, comprada
-76, comprada
-77, comprada
-78, comprada
-79, comprada
-80, comprada
-81, comprada
-83, comprada
-84, comprada
-85, comprada
-88, comprada
-94, comprada
-95, comprada
-96, comprada
-99, comprada
-100, comprada
-101, comprada
-107, comprada
-109, comprada
-116, comprada
-120, comprada
-121, comprada
-145, comprada
-160, comprada
-171, comprada
-220, comprada
-250, comprada
-256, comprada
-259, comprada
-298, comprada
-299, comprada
-333, comprada
-366, comprada
-399, comprada
-499, comprada
+Número,Status
+1,comprada
+2,comprada
+3,comprada
+4,comprada
+5,comprada
+6,comprada
+7,comprada
+8,comprada
+9,comprada
+10,comprada
+11,comprada
+12,comprada
+13,comprada
+14,comprada
+15,comprada
+16,comprada
+17,comprada
+18,comprada
+19,comprada
+20,comprada
+21,comprada
+22,comprada
+23,comprada
+25,comprada
+26,comprada
+27,comprada
+28,comprada
+29,comprada
+30,comprada
+31,comprada
+32,comprada
+33,comprada
+34,comprada
+35,comprada
+36,comprada
+37,comprada
+38,comprada
+39,comprada
+40,comprada
+41,comprada
+42,comprada
+43,comprada
+44,comprada
+45,comprada
+46,comprada
+47,comprada
+48,comprada
+49,comprada
+50,comprada
+51,comprada
+52,comprada
+53,comprada
+54,comprada
+55,comprada
+56,comprada
+57,comprada
+58,comprada
+59,comprada
+60,comprada
+61,comprada
+62,comprada
+63,comprada
+64,comprada
+65,comprada
+66,comprada
+67,comprada
+68,comprada
+69,comprada
+70,comprada
+71,comprada
+72,comprada
+73,comprada
+74,comprada
+75,comprada
+76,comprada
+77,comprada
+78,comprada
+79,comprada
+80,comprada
+81,comprada
+82,comprada
+83,comprada
+84,comprada
+85,comprada
+86,comprada
+87,comprada
+88,comprada
+89,comprada
+90,comprada
+91,comprada
+92,comprada
+93,comprada
+94,comprada
+95,comprada
+96,comprada
+97,comprada
+98,comprada
+99,comprada
+100,comprada
+101,comprada
+102,comprada
+103,comprada
+104,comprada
+105,comprada
+106,comprada
+107,comprada
+108,comprada
+109,comprada
+110,comprada
+111,comprada
+112,comprada
+113,comprada
+114,comprada
+115,comprada
+116,comprada
+117,comprada
+118,comprada
+119,comprada
+120,comprada
+121,comprada
+122,comprada
+123,comprada
+124,comprada
+125,comprada
+126,comprada
+127,comprada
+128,comprada
+129,comprada
+130,comprada
+131,comprada
+132,comprada
+133,comprada
+134,comprada
+135,comprada
+136,comprada
+137,comprada
+138,comprada
+139,comprada
+140,comprada
+145,comprada
+150,comprada
+151,comprada
+152,comprada
+153,comprada
+154,comprada
+155,comprada
+160,comprada
+171,comprada
+201,comprada
+220,comprada
+250,comprada
+256,comprada
+259,comprada
+271,comprada
+298,comprada
+299,comprada
+300,comprada
+301,comprada
+324,comprada
+333,comprada
+366,comprada
+389,comprada
+399,comprada
+400,comprada
+401,comprada
+418,comprada
+419,comprada
+456,comprada
+459,comprada
+499,comprada
+500,comprada
