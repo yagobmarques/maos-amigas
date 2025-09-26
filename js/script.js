@@ -165,16 +165,18 @@ $(document).ready(function() {
                         <div class="card h-100 text-center border-0 shadow-sm">
                             <div class="card-body p-4">
                                 <div class="patrocinador-logo mb-3">
-                                    <div class="logo-placeholder bg-light d-flex align-items-center justify-content-center mx-auto" style="width: 120px; height: 80px; border-radius: 10px;">
-                                        <i class="fas fa-building fa-2x text-muted"></i>
-                                    </div>
+                                    ${patrocinador.logo ? 
+                                        `<img src="${patrocinador.logo}" alt="${patrocinador.nome}" class="mx-auto d-block" style="width: 120px; height: 80px; object-fit: cover; border-radius: 10px;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">` :
+                                        `<div class="logo-placeholder bg-light d-flex align-items-center justify-content-center mx-auto" style="width: 120px; height: 80px; border-radius: 10px;"><i class="fas fa-building fa-2x text-muted"></i></div>`
+                                    }
                                 </div>
-                                <span class="badge ${badgeClass} mb-2">${patrocinador.categoria}</span>
+                                ${patrocinador.categoria ? `<span class="badge ${badgeClass} mb-2">${patrocinador.categoria}</span>` : ''}
                                 <h5 class="card-title">${patrocinador.nome}</h5>
                                 <p class="card-text small text-muted">${patrocinador.descricao}</p>
                                 <div class="contact-links">
-                                    ${patrocinador.website ? `<a href="${patrocinador.website}" class="btn btn-sm btn-outline-primary me-2" target="_blank"><i class="fas fa-globe"></i></a>` : ''}
-                                    ${patrocinador.contato.includes('@') ? `<a href="mailto:${patrocinador.contato}" class="btn btn-sm btn-outline-secondary"><i class="fas fa-envelope"></i></a>` : `<a href="tel:${patrocinador.contato}" class="btn btn-sm btn-outline-success"><i class="fas fa-phone"></i></a>`}
+                                    ${patrocinador.instagram ? `<a href="https://instagram.com/${patrocinador.instagram.replace('@', '')}" class="btn btn-sm btn-outline-primary me-2" target="_blank"><i class="fab fa-instagram"></i></a>` : ''}
+                                    ${patrocinador.website ? `<a href="${patrocinador.website}" class="btn btn-sm btn-outline-secondary me-2" target="_blank"><i class="fas fa-globe"></i></a>` : ''}
+                                    ${patrocinador.contato ? (patrocinador.contato.includes('@') ? `<a href="mailto:${patrocinador.contato}" class="btn btn-sm btn-outline-success"><i class="fas fa-envelope"></i></a>` : `<a href="tel:${patrocinador.contato}" class="btn btn-sm btn-outline-success"><i class="fas fa-phone"></i></a>`) : ''}
                                 </div>
                             </div>
                         </div>

@@ -1,29 +1,46 @@
 [
   {
-    "id": 1,
-    "nome": "Supermercado Amigo",
-    "categoria": "Ouro",
-    "logo": "images/patrocinadores/supermercado-amigo.png",
-    "descricao": "Doação mensal de cestas básicas",
-    "website": "https://supermercadoamigo.com.br",
-    "contato": "contato@supermercadoamigo.com.br"
-  },
-  {
-    "id": 2,
-    "nome": "Farmácia Saúde",
-    "categoria": "Prata",
-    "logo": "images/patrocinadores/farmacia-saude.png",
-    "descricao": "Medicamentos e produtos de higiene",
-    "website": "https://farmaciasaude.com.br",
-    "contato": "parceria@farmaciasaude.com.br"
-  },
-  {
-    "id": 3,
-    "nome": "Padaria do Bairro",
-    "categoria": "Bronze",
-    "logo": "images/patrocinadores/padaria-bairro.png",
-    "descricao": "Pães e lanches para eventos",
+    "nome": "Hermelinda Cavalcanti",
+    "logo": "images/patrocinadores/hermelinda.png",
+    "descricao": "Doação em dinheiro",
+    "instagram": "@hermelindacavalcanti",
     "website": "",
-    "contato": "(11) 99999-8888"
+    "contato": ""
+  },
+  {
+    "nome": "Ponto Certo Locação",
+    "descricao": "Doação em dinheiro",
+    "logo": "images/patrocinadores/ponto.png",
+    "instagram": "@ponto_certo_locacao",
+    "website": "",
+    "contato": ""
+  },
+  {
+    "nome": "Durma Mais Colchões",
+    "logo": "images/patrocinadores/durma_mais.jpg",
+    "descricao": "Doação em dinheiro",
+    "instagram": "@durmamaiscolchoes",
+    "contato": ""
+  },
+  {
+    "nome": "Clau Oliver",
+    "logo": "images/patrocinadores/clau.png",
+    "descricao": "Doação em dinheiro",
+    "instagram": "@clauoliver_mf",
+    "contato": ""
+  },
+  {
+    "nome": "Belle Vie Centro Integrado de Saúde e Beleza",
+    "logo": "images/patrocinadores/belle.png",
+    "descricao": "Doação em dinheiro",
+    "instagram": "@bellevie.cisb",
+    "contato": ""
+  },
+  {
+    "nome": "WM VISUAL",
+    "logo": "images/patrocinadores/wm.png",
+    "descricao": "Doação em dinheiro",
+    "instagram": "",
+    "contato": ""
   }
 ]
