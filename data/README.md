@@ -48,15 +48,15 @@ Esta pasta contém os arquivos JSON para configurar dinamicamente as seções de
 ```
 
 ### Campos obrigatórios:
-- `id`: Número único identificador
 - `nome`: Nome da empresa/pessoa
-- `categoria`: "Ouro", "Prata" ou "Bronze"
 - `descricao`: Tipo de apoio (máx. 80 caracteres)
-- `contato`: E-mail ou telefone
+- `instagram`: Usuário do Instagram (com @)
 
 ### Campos opcionais:
-- `logo`: Caminho para logo (300x200px)
+- `categoria`: "Ouro", "Prata" ou "Bronze"
+- `logo`: Caminho para logo (120x80px)
 - `website`: Site da empresa
+- `contato`: E-mail ou telefone
 
 ## Como Adicionar/Editar
 

@@ -42,5 +42,27 @@
     "descricao": "Doação em dinheiro",
     "instagram": "",
     "contato": ""
+  },
+  {
+    "nome": "Jeferson personal",
+    "logo": "images/patrocinadores/jef.png",
+    "descricao": "Doação em dinheiro",
+    "instagram": "@jefersonppereira",
+    "contato": ""
+  },
+  {
+    "nome": "Caju Sanfoneiro",
+    "logo": "images/patrocinadores/caju.png",
+    "descricao": "Doação em dinheiro",
+    "instagram": "@cajusanfoneiro",
+    "contato": ""
+  },
+  {
+    "nome": "EDN Bebidas",
+    "logo": "images/patrocinadores/edn.jpg",
+    "descricao": "Doação em dinheiro",
+    "instagram": "@ednbebidas_",
+    "contato": ""
   }
+
 ]
